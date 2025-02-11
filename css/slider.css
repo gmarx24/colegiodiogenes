@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'flexslider-icon';
+	src: url('../fonts/flexslider-icon.eot');
+	src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.flexslider{
+	margin-top: 110px;
+	width: 100%;
+	overflow: hidden;
+	height: 870px;
+}
+.slides img{
+	width: 100%;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-control-nav{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 5%;
+	z-index: 999;
+}
+.flex-control-nav li{
+	display: inline-block;
+	margin: 0 5px;
+}
+.flex-control-nav li a{
+	position: absolute;
+	display:none;
+	margin-top: 105px;
+	background-color: white;
+	width: 9px;
+	height: 9px;
+	border-radius: 15px;
+	text-indent: -9999px;
+
+}
+.flex-control-nav li a:hover{
+	background-color: #2E2E2E;
+}
+.flex-control-nav li a.flex-active{
+	background-color: #2E2E2E;
+}
+.flex-direction-nav a{
+	position: absolute;
+	display: block;
+	text-decoration: none;
+	top: 65%;
+	z-index: 999;
+	width: 40px;
+	height: 45px;
+	overflow: hidden;
+    opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.2s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.2s ease-in-out;
+}
+.flex-direction-nav .flex-prev{
+	left: 0;
+}
+.flex-direction-nav .flex-next{
+	right: 0;
+}
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+    content: '\f002';
+}
+.flex-caption p{
+	font-family:"architects-daughter";
+	position: absolute;
+	top: 20%;
+	margin-left: 100px;
+	width: 100%;
+	font-size: 50px;
+	color: black;
+	font-weight: bold;
+}
+.flexslider:hover .flex-direction-nav .flex-prev{
+	opacity: 0.7;
+	left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover{
+	opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next{
+	opacity: 0.7;
+	right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover{
+	opacity: 1;
+}
+/*resposive*/
+@media screen and (max-width:1300px){
+    .flexslider{
+	    height: 850px;
+    }
+}
+@media screen and (max-width:1270px){
+    .flexslider{
+	    height: 810px;
+    }
+}
+@media screen and (max-width:1216px){
+    .flexslider{
+	    height: 790px;
+    }
+}
+@media screen and (max-width:1182px){
+    .flexslider{
+	    height: 770px;
+    }
+}
+@media screen and (max-width:1154px){
+    .flexslider{
+	    height: 750px;
+    }
+}
+@media screen and (max-width:1130px){
+    .flexslider{
+	    height: 730px;
+    }
+}
+@media screen and (max-width:1075px){
+    .flexslider{
+	    height: 700px;
+    }
+}
+@media screen and (max-width:1054px){
+    .flexslider{
+	    height: 680px;
+    }
+}
+@media screen and (max-width:1024px){
+	.flexslider{
+	    height: 650px;
+	}
+    .flex-direction-nav a{
+	    top: 60%;
+	}
+}
+@media screen and (max-width:980px){
+	.flexslider{
+	    height: 640px;
+	}
+    flex-direction-nav a{
+	    top: 20%;
+    }
+}
+@media screen and (max-width:910px){
+	.flexslider{
+	    height: 590px;
+	}
+}
+@media screen and (max-width:888px){
+	.flexslider{
+	    height: 575px;
+	}
+}
+@media screen and (max-width:864px){
+	.flexslider{
+	    height: 560px;
+	}
+}
+@media screen and (max-width:842px){
+	.flexslider{
+	    height: 550px;
+	}
+}
+@media screen and (max-width:830px){
+	.flexslider{
+	    height: 540px;
+	}
+}
+@media screen and (max-width:812px){
+	.flexslider{
+	    height: 525px;
+	}
+}
+@media screen and (max-width:795px){
+	.flexslider{
+	    height: 510px;
+	}
+}
+@media screen and (max-width:768px){
+	.flexslider{
+	    height: 500px;
+	}
+    .flex-direction-nav a{
+        display: none;
+    }
+}
+@media screen and (max-width:760px){
+	.flexslider{
+	    height: 490px;
+	}
+}
+ @media screen and (max-width:742px){
+	.flexslider{
+	    height: 480px;
+	}
+}
+ @media screen and (max-width:722px){
+	.flexslider{
+	    height: 465px;
+	}
+}
+@media screen and (max-width:700px){
+	.flexslider{
+	    height: 450px;
+	}
+}
+@media screen and (max-width:671px){
+	.flexslider{
+	    height: 435px;
+	}
+}
+@media screen and (max-width:650px){
+	.flexslider{
+	    height: 415px;
+	}
+}
+@media screen and (max-width:630px){
+	.flexslider{
+	    height: 410px;
+	}
+}
+@media screen and (max-width:620px){
+	.flexslider{
+	    height: 400px;
+	}
+}
+@media screen and (max-width:600px){
+	.flexslider{
+	    height: 385px;
+	}
+}
+
+ @media screen and (max-width:578px){
+	.flexslider{
+	    height: 375px;
+	}
+}
+ @media screen and (max-width:562px){
+	.flexslider{
+	    height: 365px;
+	}
+}
+@media screen and (max-width:548px){
+     .flexslider{
+	    height: 355px;
+	}
+} 
+@media screen and (max-width:533px){
+	.flexslider{
+	    height: 342px;
+	}
+}
+ @media screen and (max-width:515px){
+	.flexslider{
+	    height: 330px;
+	}
+}
+@media screen and (max-width:497px){
+	.flexslider{
+	    height: 320px;
+	}
+}
+@media screen and (max-width:480px){
+	.flexslider{
+	    height: 310px;
+	}
+}
+@media screen and (max-width:465px){
+	.flexslider{
+	    height: 300px;
+	}
+}
+
+@media screen and (max-width:450px){
+	.flexslider{
+	    height: 289px;
+	}
+}
+@media screen and (max-width:435px){
+	.flexslider{
+	    height: 280px;
+	}
+}
+@media screen and (max-width:425px){
+	.flexslider{
+	    height: 275px;
+	}
+}
+@media screen and (max-width:417px){
+	.flexslider{
+	    height: 270px;
+	}
+}
+@media screen and (max-width:405px){
+	.flexslider{
+	    height: 260px;
+	}
+}
+@media screen and (max-width:390px){
+	.flexslider{
+	    height: 255px;
+	}
+}
+@media screen and (max-width:375px){
+	.flexslider{
+	    height: 240px;
+	}
+}
+@media screen and (max-width:360px){
+	.flexslider{
+	    height: 230px;
+	}
+}
+@media screen and (max-width:345px){
+	.flexslider{
+	    height: 222px;
+	}
+}
+@media screen and (max-width:333px){
+	.flexslider{
+	    height: 215px;
+	}
+}
+    @media screen and (max-width:325px){
+	.flexslider{
+	    height: 209px;
+	}
+}
+@media screen and (max-width:317px){
+	.flexslider{
+	    height: 200px;
+	}
+}
+@media screen and (max-width:297px){
+	.flexslider{
+	    height: 190px;
+	}
+}

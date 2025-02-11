@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+#btn-menu{
+	display: none;
+}
+header label{
+	display: none;
+	padding: 10px;
+	float: right;
+	font-size: 25px;
+	margin: 10px 0;
+}
+header label:hover{
+	cursor: pointer;
+	background: #212421;
+}
+.menu ul{
+	display:flex;
+	list-style: none;
+	background-color: #ffffff;
+}
+.menu ul ul {
+	display: none;
+}
+.menu a{
+	display: block;
+	font-weight: bold;
+	padding: 15px 15px;
+	text-decoration: none;
+	color: #212421;
+	font-family: "proxima-nova", sans-serif;
+	transition:border-bottom .3s;
+	-webkit-transition:border-bottom .5s;
+	-moz-transition:border .5s;
+	-o-transition:border-bottom .5s;
+	margin-top: 15px;
+}
+.menu ul li:hover{
+	background-color:  #ffffff;
+	border-bottom: 3px solid #212421;
+}
+.menu a span{
+	margin-right: 8px;
+}
+.menu ul li a:hover{
+	cursor: pointer;
+	transition: all 1.5s;
+	color: #212421;
+	transform: scale(0.9,0.9);
+}
+.menu ul li:hover ul{
+	display: block;
+	position: absolute;
+}
+.menu ul li ul a {
+	font-size: 14px;
+}
+/*resposive*/
+@media screen and (max-width:1144px){
+.menu ul {
+	font-size: 14px;
+    }
+}
+@media screen and (max-width:1078px){
+.menu ul {
+	font-size: 13px;
+    }
+}
+@media screen and (max-width:1045px){
+.menu ul {
+	font-size: 12px;
+    }
+}
+@media (max-width:1024px){
+	header label{
+		display: block;
+		margin-top: 25px;
+	}
+	.menu{
+		position: absolute;
+		width: 45%;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+		top:95px;
+	}
+	.menu ul{
+		display: block;
+		text-align: center;
+	}
+	.menu ul li:hover ul{
+		display: none;
+		position: static;
+	}
+	#btn-menu:checked ~ .menu{
+		transform: translateX(0%);
+	}
+	.menu ul ul a{
+		padding: 15px 35px;
+	}
+}
+/*Responsive*/
+@media screen and (max-width:980px){
+	
+}
+@media screen and (max-width:921px){
+	
+}
+@media screen and (max-width:846px){
+	
+}
+@media screen and (max-width:768px){
+	
+}
+@media screen and (max-width:671px){
+	
+}
+@media screen and (max-width:480px){
+
+}
+@media screen and (max-width:375px){
+	header img{
+	    margin-top: -10px;
+	    width: 210px;
+	    margin-left: 10%;
+	}
+	header label{
+		display: block;
+		margin-top: 20px;
+	}
+	.menu{
+		width: 65%;
+	}
+}

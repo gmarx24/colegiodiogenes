@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+#infomation{
+    margin-top: -25px;
+	width: 100%;
+/*	height: 240px;*/
+	background-color: #ffffff;
+/*
+	border-top: #722F38 7px outset;
+    border-bottom: #b17c54 7px outset;
+*/
+}
+#infomation .container{
+	display:flex;
+	justify-content: center;
+}
+#infomation article{
+	margin: 20px;
+}
+#infomation h3{
+	text-align: center;
+	color: #212421;
+}
+#infomation p{
+	margin-top: 10px;
+	text-align: justify;
+	color: #212421;
+	font-size: 18px;
+	transition: 2s;
+    padding: 5px;
+}
+#infomation p:hover{
+		transform: scale(0.9,1.1);
+}
+
+/*resposive*/
+@media screen and (max-width:1057px){
+	#infomation p{
+		font-size: 19px
+	}
+}
+@media screen and (max-width:1024px){
+#infomation{
+    margin-top: -25px;
+	width: 100%;
+/*	height: 260px;*/
+	}
+}
+@media screen and (max-width:980px){
+
+	#infomation .container{
+	flex-wrap: wrap;
+	}
+	#infomation{
+    margin-top: -25px;
+	width: 100%;
+/*	height: 500px;*/
+	}
+}
+@media screen and (max-width:768px){
+	
+}
+@media screen and (max-width:671px){
+	#infomation{
+	width: 100%;
+/*	height: 600px;*/
+	}
+}
+
+@media screen and (max-width:480px){
+#infomation{
+	width: 100%;
+/*	height: 610px;*/
+	}
+}
+@media screen and (max-width:375px){
+
+   #infomation{
+    margin-top: -25px;
+	width: 100%;
+/*	height: 680px;*/
+	}
+}
+@media screen and (max-width:297px){
+	#infomation{
+		width: 100%;
+/*		height: 740px;*/
+	}
+}
